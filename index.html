@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Matgenix</title>
+    <!-- Link vers le CDN de Bootstrap (CSS et JS) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha384-oZ./+KbOGJzWbx1zL/G6fSkMzC9jcS25TK/sWn//JGpOQ2/nJT0p4aAWVjQ38T2I" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="./script.js"></script>  
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* Ajouter une classe pour rendre les images déplaçables */
+      .draggable {
+        cursor: move;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container-fluid">
+        <!-- Titre en haut à gauche de la Navbar -->
+        <img src="matlogo.png" alt="" style="width: 70px;">
+
+        <!-- Bouton hamburger pour le mode responsive -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Liens dans la Navbar -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Lien du bouton à droite -->
+            <li class="nav-item">
+              <button class="btn" type="button"><a href="connexion.html">connexion</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="card">
+      <div class="card-header">
+        Toolkit
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="db.png" alt="" class="draggable"> 
+            Base de donnée 1
+          </div>
+          <div class="col-md-3">
+            <img src="db.png" alt="" class="draggable"> 
+            Base de donnée 2
+          </div>
+          <div class="col-md-3">
+            <img src="db.png" alt="" class="draggable"> 
+            Base de donnée 3
+          </div>
+          <div class="col-md-3">
+            <img src="db.png" alt="" class="draggable"> 
+            Base de donnée 4
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="filtre.png" alt="" class="draggable"> 
+            Filtre
+          </div>
+          <div class="col-md-3">
+            <img src="filtre.png" alt="" class="draggable"> 
+            Filtre
+          </div>
+          <div class="col-md-3">
+            <img src="filtre.png" alt="" class="draggable"> 
+            Filtre
+          </div>
+          <div class="col-md-3">
+            <img src="filtre.png" alt="" class="draggable"> 
+            Filtre
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="fusion.png" alt="" class="draggable"> 
+            Fusion
+          </div>
+          <div class="col-md-3">
+            <img src="fusion.png" alt="" class="draggable"> 
+            Fusion
+          </div>
+          <div class="col-md-3">
+            <img src="fusion.png" alt="" class="draggable"> 
+            Fusion
+          </div>
+          <div class="col-md-3">
+            <img src="fusion.png" alt="" class="draggable"> 
+            Fusion
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="resultat.png" alt="" class="draggable"> 
+            Résultat
+          </div>
+          <div class="col-md-3">
+            <img src="resultat.png" alt="" class="draggable"> 
+            Résultat
+          </div>
+          <div class="col-md-3">
+            <img src="resultat.png" alt="" class="draggable"> 
+            Résultat
+          </div>
+          <div class="col-md-3">
+            <img src="resultat.png" alt="" class="draggable"> 
+            Résultat
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!-- Initialiser la fonctionnalité draggable dans le script.js -->
+    <script>
+      $(document).ready(function() {
+        $(".draggable").draggable();
+      });
+    </script>
+  </body>
+</html>
